@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="contact-row-2">
-        <input class="name-input" type="text"  placeholder="Your Name">
-        <input class="name-input" type="email" placeholder="Your Email">
-        <textarea class="message-input" name="Message" rows="6" placeholder="Your Message"></textarea>
-        <div class="contact-submit-button">
-            <button id="btn">Submit</button>
-        </div> 
+        <form action="submit.php">
+            Name: <input class="name-input" type="text" name="username"  placeholder="Your Name"><br>
+            Email: <input class="name-input" type="email" name="email" placeholder="Your Email"><br>
+            <!-- Message: <textarea class="message-input" name="Message" name="message" rows="6" placeholder="Your Message"></textarea><br> -->
+           <input type="submit" value="insert">
+        </form>
+       
         <span id="msg"></span>
     </div>
 </body>
